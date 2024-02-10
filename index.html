@@ -1,3 +1,272 @@
-//hello
+<!DOCTYPE html>
+<html lang = "en">
 
-//hiiiiii
+  <head>
+
+    <meta charset="utf-8">
+    <title>MACARON - STYLE GUIDE </title>
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+<!--------------------------HEADER //-------------------------------------------------->
+      <header>
+        <h1>Macaron - Style Guide</h1>
+        <nav>        
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+        </nav>
+        <nav>        
+          <a href="product-listing.html">Product Listing Template</a>
+          <a href="#citations">Citations</a>
+        </nav>
+      </header>
+
+
+<!--------------------------INTERACTIVE ELEMENTS SECTION //---------------------------->
+    <section class = "area" id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!--In-text link//---->
+      <section class = "element">
+        <h3>In-text link</h3>
+          <h4>CSS selector:</h4>
+          <p>.link-text</p>
+
+          <h4>Sample code:</h4>
+          <code>
+           &lt;p&gt;
+            &lt;a class="link-text" href="index.html"&gt;Click here&lt;/a&gt;
+            to return to this page!
+            &lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>
+            <a class = "link-text" href="index.html">Click here</a>
+            to return to this page!
+          </p>
+      </section><!-- element (in-text link) -->
+
+
+      <!-- Navigation link (button link) -->
+      <section class = "element">
+
+        <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.navi-link</p>
+
+          <h4>Sample code:</h4>
+          <code>
+             &lt;nav&gt;
+              &lt;a class="navi-link" href="#"&gt;Navigation Link&lt;/a&gt;
+            &lt;/nav&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <nav>
+            <a class="navi-link" href="#">Navigation Link</a>
+          </nav>
+
+      </section><!-- element (navigation link) -->
+
+
+      <!-- Submit/reset buttons-->
+      <section class = "element">
+        <h3>Submit/Reset Buttons</h3>
+         <h4>CSS selector:</h4>
+         <p>submit</p>
+
+         <h4>Sample code:</h4>
+         <code>
+                &lt;a class="submit-button"&gt;
+            &lt;input type="submit" value="Submit"&gt;
+          &lt;/a&gt;
+        </code>
+
+         <h4>Rendered element:</h4>
+         <form>
+         <a class = "submit-button"><input type="submit" value="Submit"></a>
+       </form>
+      </section><!-- element (submit button) -->
+
+
+       <!-- Text Input Field with Label-->
+      <section class = "element">
+        <h3>Text Input Field with Label</h3>
+          <h4>CSS selector:</h4>
+          <p>.text-input</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;form class = "text-input" action="/action_page.php"&gt; <br>
+              &lt;label for="label"&gt;Text Input Label:&lt;/label&gt;<br>
+              &lt;input type="text" id = "label"&gt;<br>
+           &lt;/form&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <form class = "text-input" action="/action_page.php">
+            <label for="label">Text Input Label:</label>
+            <input type="text" id = "label">
+          </form>
+      </section><!-- element (text input field with label) -->
+
+
+      <!-- Radio Button with Label-->
+      <section class = "element">
+        <h3>Radio Button with Label</h3>
+          <h4>CSS selector:</h4>
+          <p>.text-input</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;input type = "radio" class = "radio"&gt;
+            &lt;label for = "radio">Sample Radio Button&lt;/label&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <input type = "radio" class = "radio">
+          <label for = "radio">Sample Radio Button</label>
+      </section><!-- radio button with label -->
+
+      <!-- Image as a Link-->
+      <section class = "element">
+        <h3>Image as a Link</h3>
+          <h4>CSS selector:</h4>
+          <p>.image-link</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          </code>
+          <h4>Rendered element:</h4>
+          <div class = "image-link">
+            <a href="index.html">
+             <img src="resources/logo.png" alt="chef">
+            </a>
+          </div>
+      </section><!-- element (image link) -->
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section class = "area" id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+          <h4>CSS selector:</h4>
+          <p>.heading</p>
+
+          <h4>Sample code:</h4>
+          <code>
+             &lt;h1 class="heading"&gt; h1 heading :)&lt;/h1&gt;
+              &lt;h2 class="heading"&gt; h2 heading :)&lt;/h2&gt;
+              &lt;h3 class="heading"&gt; h3 heading :)&lt;/h3&gt;
+              &lt;h4 class="heading"&gt; h4 heading :)&lt;/h4&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <h1 class = "heading"> h1 heading :) </h1>
+          <h2 class = "heading"> h2 heading :) </h2>
+          <h3 class = "heading"> h3 heading :) </h3>
+          <h4 class = "heading"> h4 heading :) </h4>
+      </section><!-- element (headings) -->
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;paragraph paragraph paragraph paragraph paragraph paragraph paragraph&lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
+      </section><!-- element (paragraphs) -->
+
+      <!-- Numbered Lists-->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+          <h4>CSS selector:</h4>
+          <p>.number-list</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;ol type = "1" class = "number-list"&gt; <br>
+              &lt;li&gt; first option &lt;/li&gt; <br>
+              &lt;li&gt; second option &lt;/li&gt; <br>
+            &lt;/ol&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+         <ol type = "1" class = "number-list">
+            <li> first option </li>
+            <li> second option </li>
+         </ol>
+      </section><!-- element (numbered lists) -->
+
+    </section>
+    <!-- // END OF TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section class = "area" id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <!-- Main Navigation-->
+      <section class="element">
+        <h3>Main Navigation</h3>
+        
+         <nav>
+            <a class="navi-link" href="#">Navigation Link</a>
+            <a class="navi-link" href="#">Navigation Link</a>
+            <a class="navi-link" href="#">Navigation Link</a>
+         </nav>
+      </section><!-- element (main navigation) -->
+
+      <!-- Product Listing-->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+      </section><!-- element  (product listing) -->
+
+      <!-- Payment Form -->
+      <section class="element">
+        <h3>Payment Form</h3>
+        
+      </section> <!-- element(payment form) -->
+
+      <!-- Checkout cart -->
+      <section class="element">
+        <h3>Checkout Cart</h3>
+       
+    </section> <!-- element(checkout cart) -->
+
+  </section>
+    <!-- // END OF COMBINED ELEMENTS SECTION -->
+
+
+
+    <section class = "area" id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+       
+    </ul>
+    </section>
+    <br><br>
+
+
+  </body>
+</html>
