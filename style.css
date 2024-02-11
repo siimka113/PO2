@@ -1,6 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ----------------------- TEXT and HEADINGS Related ---------------------------*/
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #4A1C00;
+}
+h2 {
+	font-family: 'Single Day', sans-serif;
+	font-size: 36px;
+}
+
+h3 {
+	font-family: 'Single Day', sans-serif;
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 20px;
+	font-weigtht: bold;
+}
+
+p {
+	font-size: 14px;
+}
+
+nav {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase; /* all navigation links are all upper cased */
+}
+
+nav a {
+	text-decoration: none;
+	color: #818181;
+}
+
+nav a:hover{
+	text-decoration: underline; /* underline appears when hovering */
+	text-underline-offset: 0.5rem; /* make underline 0.5rem under the text*/
+	color: #FF5998;
+}
+
+
+/* ----------------------- FORM Related ---------------------------*/
+input[type=submit] {
+	text-decoration: none;
+	background-color: #FCFCFC;
+	border-color: #818181;
+	border-radius: 1rem;
+	border-style: solid;
+	color: #818181;
+	font-size: 20px;
+	padding: 1rem 2rem;
+	cursor: pointer;
+}
+
+
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
+
+/* sections (interactive, text, combined) in the style guide */
+.area {
+
+}
+.area h2{
+	text-align: center;
+}
 
 /* Individual elements on the style guide page */
 .element {
+	margin-top: 5em;
+	border-top: 2px solid;
+}
 
+/* "headings" element in the style guide */
+#style-guide-headings h2 {
+	text-align: left;
 }
