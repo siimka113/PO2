@@ -3,59 +3,482 @@
 }
 
 /* ----------------------- TEXT and HEADINGS Related ---------------------------*/
+
+body{
+	margin-left: 120px; /* Adjust as needed */
+	margin-right: 120px; /* Adjust as needed */
+}
+
 h1 {
+	font-family: 'Poppins', sans-serif;
 	font-size: 36px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #4A1C00;
+	letter-spacing: -2px;
 }
 h2 {
 	font-family: 'Single Day', sans-serif;
 	font-size: 36px;
+	color: #4A1C00;
 }
 
 h3 {
 	font-family: 'Single Day', sans-serif;
 	font-size: 28px;
+	color: #4A1C00;
 }
 
 h4 {
-	font-size: 20px;
-	font-weigtht: bold;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #4A1C00;
 }
 
-p {
+p, label{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 	font-size: 14px;
+	color: #4A1C00;
+	letter-spacing: 1px;
 }
 
 nav {
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: uppercase; /* all navigation links are all upper cased */
-}
-
-nav a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+  }
+  
+  nav a {
 	text-decoration: none;
 	color: #818181;
+	position: relative; /* Required for pseudo-element positioning */
+	transition: color 0.2s ease; /* Ease transition for the color change */
+
+  }
+  
+  nav a::before {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px; /* Adjust as needed */
+	bottom: -0.2rem; /* Adjust based on text-underline-offset */
+	left: 0;
+	background-color: #FF5998;
+	transition: width 0.2s ease; /* Ease transition for the underline */
+
+  }
+  
+  nav a:hover::before {
+	width: 100%; /* Fully draw the underline on hover */
+  }
+  
+  nav a:hover {
+	color: #FF5998;
+  }
+
+.link-text {
+	font-weight: bold;
+	color: #ff69b4; /* Pink color */
+	text-decoration: none; /* Remove underline */
+	position: relative; /* Needed for positioning the arrow */
+  }
+
+  p > .link-text {
+	padding-right: 20px; /* Adjust as needed */
+	letter-spacing: 0px;
+  }
+  
+  .link-text::after {
+	content: ' →'; /* Arrow character */
+	position: absolute;
+	transform: translateX(-100%);
+
+	left: 100%; /* Position the arrow just to the right of the link */
+	transition: left 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .link-text:hover::after {
+	left: 120%; /* Move the arrow further right on hover */
+	left: calc(100% + 5px);
+
+  }
+
+  img {
+	width: 10rem; /* Set the desired width */
+	height: auto; /* Maintain aspect ratio */
+	mix-blend-mode: multiply;
+
 }
 
-nav a:hover{
-	text-decoration: underline; /* underline appears when hovering */
-	text-underline-offset: 0.5rem; /* make underline 0.5rem under the text*/
-	color: #FF5998;
-}
+	.image-link {
+		display: inline-block; /* Ensures the div takes up only as much width as necessary */
+	}
+
+	.image-link img {
+		transition: transform 0.3s ease-in-out; /* Apply ease-in/out transition to transform property */
+	}
+
+	.image-link:hover img {
+		transform: scale(1.2); /* Increase the scale of the image on hover */
+	}
 
 
 /* ----------------------- FORM Related ---------------------------*/
 input[type=submit] {
+
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
 	text-decoration: none;
 	background-color: #FCFCFC;
 	border-color: #818181;
 	border-radius: 1rem;
 	border-style: solid;
 	color: #818181;
-	font-size: 20px;
-	padding: 1rem 2rem;
+	font-size: 16px;
+	padding: 0.8rem 2rem;
 	cursor: pointer;
+	width: 100%;
+	transition: color 0.3s ease, border-color 0.3s ease; /* Add transition for color and border-color */
+
+}
+
+input[type=submit]:hover {
+	color:#FF5998;
+	border-color: #FF5998;
+  }
+
+
+.text-input {
+  position: relative;
+  width: 100%;
+}
+
+.text-input label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4A1C00;
+  letter-spacing: 1px;
+  pointer-events: none; 
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.text-input input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  padding-left: 30px;
+  background-color: #F9F9F9;
+  border: none;
+  border-radius: 1.3rem;
+  outline: none; 
+  transition: background-color 0.3s;
+}
+
+.text-input input[type="text"]:hover {
+	background-color: #EBEBEB; 
+  }
+
+.text-input input[type="text"]:focus + label,
+.text-input input[type="text"]:valid + label {
+  top: 0;
+  font-size: 12px; /* Adjust as needed */
+  color: #4A1C00; /* Adjust as needed */
+}
+
+input[type="radio"] {
+    display: inline-block; 
+    vertical-align: middle;
+    appearance: none;
+	margin-right: 0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #D9D9D9;;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked {
+    background-color: #FF5998;
+  }
+
+
+/* ----------------------- NAV BAR Related ---------------------------*/
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #dcdcdc;
+	position: relative;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+	z-index: 1; /* Ensure navbar stays on top of other elements */
+  }
+
+  /* Style for the circular overflow logo container */
+  .logo-container {
+	position: absolute;
+	left: 25px; /* Adjust overflow position */
+	
+  }
+
+  /* Style for the circular overflow logo */
+  .logo {
+	width: 50px; /* Adjust size as needed */
+	height: 50px; /* Adjust size as needed */
+	border-radius: 50%;
+	background-color: #fff; /* Change color as needed */
+	overflow: hidden;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+  }
+
+  /* Style for the circular overflow logo inner image */
+  .logo img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+
+  /* Style for the navigation links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto; /* Align links to the right */
+}
+
+  /* Style for the individual navigation link */
+  .nav-links a {
+	color: #fff;
+	text-decoration: none;
+  }
+
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+	.navbar {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 20px;
+		margin-right: auto; /* Align links to the left */
+	  }
+
+	.logo-container {
+	  position: relative;
+	  left: auto;
+	}
+  }
+
+/* ----------------------- PRODUCT LISTING related ---------------------------*/
+
+
+
+.container {
+    display: flex;
+    max-width: 40rem;
+    margin-right: 5rem; /* Remove margin */
+}
+
+.left-container {
+    flex: 1;
+    margin-right: calc(((100vw - 800px) / 8)); /* Initial right margin */
+}
+
+.left-container .header {
+    display: flex;
+    align-items: center;
+}
+
+.left-container .header img {
+	margin-top: 2px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.left-container h1 {
+    margin: 0;
+}
+
+.left-container img {
+	margin-top: -3rem;
+    width: 400px;
+    height: auto;
+}
+
+.right-container {
+    flex: 1;
+    max-width: 15rem;
+    margin-left: auto; /* Move right container to the end */
+	position: relative; /* Added */
+
+}
+
+.right-container .subsection {
+    margin-bottom: 20px;
+}
+
+.right-container h3 {
+    margin: 0;
+}
+
+.right-container p {
+    margin-top: 5px;
+}
+
+  
+  /* Drawing */
+  .drawing {
+	position: absolute;
+	/* Adjust the left position as needed */
+	width: 200px; /* Adjust width as needed */
+	height: 200px; /* Adjust height as needed */
+	z-index: 6;
+	left:-11rem;
+	top:3rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+	.left-container img {
+		margin-top: -3rem;
+		width: 300px;
+		height: auto;
+	}
+	
+	.drawing {
+	  opacity: 0;
+	}
+  }
+
+
+  
+/* ----------------------- FORM Related ---------------------------*/
+
+  .form-container {
+    background-color: #fff;
+
+  }
+  .form{
+    margin-bottom:1.5rem;
+    border-radius: 5px;
+    max-width: 800px;
+  }
+
+  .form-group {
+    display: flex;
+  }
+
+  .half-width {
+    width: calc(50% - 5px);
+  }
+  input.full-width {
+    width: 100%;
+  }
+
+  .form-section {
+    border-top: 1px solid #ccc;
+    max-width:800px;
+  }
+
+  .input-fields {
+    margin-right:1rem;
+    margin-left:1rem;
+  }
+  
+  .form-section:last-child {
+    margin-bottom: 0; 
+    border-bottom: 0px;
+  }
+
+
+  input[type="radio"] {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  }
+
+  form label {
+    display: inline;
+    text-align: left;
+  }
+
+
+  form input[type="text"]{
+    width: 29.5625rem;
+    height: 2.6875rem;
+    flex-shrink: 0;
+	border-radius: 1.3rem;
+	outline: none; 
+	border: none; 
+	background-color: #F9F9F9;
+    margin-top: 0.75rem;
+    padding: 1.5rem ; 
+    width: 60%; 
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease; 
+  }
+
+
+  form input[type="text"]:focus,
+  form input[type="text"]:hover{
+	background-color: #EBEBEB; 
+  }
+
+ 
+
+  .form-group input[type="text"] {
+    width: 100%; 
+    margin-right: 10px; 
+  }
+
+  
+  .checkout-cart {
+    max-width: 600px;
+    padding: 2rem;
+    padding-right: 2.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.row form {
+  display: flex;
+  width: 100%;
+  align-items: center; 
+}
+
+.row form input[type="text"],
+.row form button {
+  flex: 2;
+}
+
+.row form button {
+  flex: 1;
+  margin-top: 3rem; 
+  margin-left: 1rem;
 }
 
 

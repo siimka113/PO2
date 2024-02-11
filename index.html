@@ -7,6 +7,8 @@
     <title>MACARON - STYLE GUIDE 2 </title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Single+Day">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:400,600'">
+
 
   </head>
 
@@ -46,7 +48,7 @@
 
           <h4>Rendered element:</h4>
           <p>
-            <a class = "link-text" href="index.html">Click here</a>
+            <a class = "link-text" href="index.html">LOOK INSIDE</a>
             to return to this page!
           </p>
       </section><!-- element (in-text link) -->
@@ -111,8 +113,7 @@
 
           <h4>Rendered element:</h4>
           <form class = "text-input" action="/action_page.php">
-            <label for="label">Text Input Label:</label>
-            <input type="text" id = "label">
+            <input type="text" id = "label" placeholder="Card Number">
           </form>
       </section><!-- element (text input field with label) -->
 
@@ -146,7 +147,7 @@
           <h4>Rendered element:</h4>
           <div class = "image-link">
             <a href="index.html">
-             <img src="resources/logo.png" alt="chef">
+             <img src="resources/yellow_macaron.jpg" alt="yellow_macaron">
             </a>
           </div>
       </section><!-- element (image link) -->
@@ -225,26 +226,118 @@
     <section class = "area" id="combined_elements">
       <h2>Combined Elements</h2>
 
+
+
       <!-- Main Navigation-->
       <section class="element">
         <h3>Main Navigation</h3>
+        <h4>idk how to make the logo shape merge with the nav bar shape so that there is only one drop shadow ;-;</h4>
+
+        <nav class="navbar">
+          <div class="logo-container">
+            <div class="logo">
+              <img src="resources/yellow_macaron.jpg" alt="Logo">
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Macarons</a>
+            <a href="#">Order Now</a>
+          </div>
+        </nav>
+
+
         
-         <nav>
-            <a class="navi-link" href="#">Navigation Link</a>
-            <a class="navi-link" href="#">Navigation Link</a>
-            <a class="navi-link" href="#">Navigation Link</a>
-         </nav>
       </section><!-- element (main navigation) -->
 
       <!-- Product Listing-->
       <section class="element">
         <h3>Product/Service Listing</h3>
 
+        <div class="container">
+          <div class="left-container">
+            <div class="header">
+              <img src="resources/BackArrow.png" alt="Icon">
+              <h1>Product Title</h1>
+            </div>
+            <img src="resources/yellow_macaron.jpg" alt="Product Image">
+          </div>
+          <div class="right-container">
+            <div class="subsection">
+              <h3>Hard Part</h3>
+              <p>Description of hard part. Description of hard part.</p>
+            </div>
+            <div class="subsection">
+              <h3>Soft Part</h3>
+              <p>Description of soft part.</p>
+            </div>
+            <div class="subsection">
+              <h3>Ingredients</h3>
+              <p>List of ingredients.</p>
+            </div>
+            <form class="submit-button">
+              <input type="submit" value="Add to Order">
+            </form>
+            <div class="drawing">
+              <img src="resources/arrows.png" alt="Arrows">
+            </div> 
+          </div>
+        </div>
+
       </section><!-- element  (product listing) -->
 
       <!-- Payment Form -->
       <section class="element">
         <h3>Payment Form</h3>
+
+        <div class="payment-section">
+          <h1>Payment</h1>
+          <p>All transactions are secure and encrypted.</p>
+      
+          <form action="#" method="post">
+            <div class="form">
+              <div class="form-section">
+                <div class="form-group">
+                  <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
+                </div>
+              </div>
+      
+              <div class="form-section">
+                <div class="input-fields">
+                  <div class="form-group">
+                    <input type="text" class="full-width" placeholder="Card Number" required>
+                  </div>
+      
+                  <div class="form-group half-width">
+                    <input type="text" placeholder="MM/YY" required>
+                    <input type="text" placeholder="Security Code" required>
+                  </div>
+      
+                  <div class="form-group">
+                    <input type="text" class="full-width" placeholder="Name on Card" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label><input type="radio" name="billing_address" value="shipping_address"> Use shipping address as billing address</label>
+                </div>
+              </div>
+      
+              <div class="form-section">
+                <div class="form-group">
+                  <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+                </div>
+              </div>
+      
+              <div class="form-section">
+                <div class="form-group">
+                  <label><input type="radio" name="payment_method" value="apple_pay"> Apple Pay</label>
+                </div>
+              </div>
+              <a class = "submit-button"><input type="submit" value="Pay Now"></a> 
+            </div>
+         </form>
+        </div>
+      </div>
         
       </section> <!-- element(payment form) -->
 
