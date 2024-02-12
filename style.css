@@ -690,6 +690,10 @@ input[type="radio"] {
 	border-top: 2px solid;
 }
 
+.branding-image {
+	width: 60%;
+}
+
 /* the title and navigation in the style guide */
 #style-guide-header {
 	text-align: center;
