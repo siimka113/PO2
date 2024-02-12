@@ -423,13 +423,21 @@ input[type="radio"] {
 	border-radius: 2rem;
   min-width: 300px;
   max-width: 350px;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem 2rem;
 }
 
 #wrapper .checkout-cart {
 	margin-left: auto; /* move the shopping cart to the right, 
 										 specified this so that the shopping cart in the style guide won't align to the right
 										 side */
+}
+
+#checkout-decoration { /* the drawing on top of the checkout cart */
+	text-align: center;
+}
+
+#checkout-decoration img{
+	margin-top: -2rem;
 }
 
 .checkout-cart h2 {
@@ -481,8 +489,9 @@ input[type="radio"] {
 	text-align: right;
 }
 
-.cart-item-quantity { /* move the total item quantity a bit down so it looks better*/
-	margin-top: 0.8rem;
+.cart-item-right .cart-item-quantity{ /* move the total item quantity a bit down so it looks better*/
+	margin-top: 1.4rem;
+	margin-bottom: 0;
 }
 
 .cart-list-total {
