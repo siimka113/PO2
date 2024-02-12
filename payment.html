@@ -17,7 +17,7 @@
           </div>
           <div class="nav-links">
             <a href="#">About</a>
-            <a href="#">Macarons</a>
+            <a href="macarons.html">Macarons</a>
             <a href="#">Order Now</a>
           </div>
         </nav>
@@ -25,46 +25,61 @@
 
 
       <div id = "wrapper">
-	      <!--------------------------Product Listing SECTION //---------------------------->
+	      <!--------------------------Payment SECTION //---------------------------->
 	      <div id = "macaron-page-left">
-	      	<div class="product-detail-header">
-          	<a href="macarons.html">
-            	<img src="resources/BackArrow.png" alt="Icon">
-            </a>
-	          <h1>The anatomy of the Lemon Tree</h1>
-	        </div>
-			    <div class="container">
-	          <div class="left-container">
-	            <img src="resources/yellow_macaron.jpg" alt="Product Image">
-	          </div>
-	          <div class="right-container">
-	            <div class="subsection">
-	              <h3>Hard Part</h3>
-	              <p>Description of hard part. Description of hard part.</p>
-	            </div>
-	            <div class="subsection">
-	              <h3>Soft Part</h3>
-	              <p>Description of soft part.</p>
-	            </div>
-	            <div class="subsection">
-	              <h3>Ingredients</h3>
-	              <p>List of ingredients.</p>
-	            </div>
-	            <form class="submit-button">
-	              <input type="submit" value="Add to Order">
-	            </form>
-	            <div class="drawing">
-	              <img src="resources/arrows.png" alt="Arrows">
-	            </div> 
-	          </div>
-	        </div><!-- product-detail-header -->
+                <h1>Payment</h1>
+                <p>All transactions are secure and encrypted.</p>
+            
+                <form action="#" method="post">
+                  <div class="form">
+                    <div class="form-section">
+                      <div class="form-group">
+                        <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
+                      </div>
+                    </div>
+            
+                    <div class="form-section">
+                      <div class="input-fields">
+                        <div class="form-group">
+                          <input type="text" class="full-width" placeholder="Card Number" required>
+                        </div>
+            
+                        <div class="form-group half-width">
+                          <input type="text" placeholder="MM/YY" required>
+                          <input type="text" placeholder="Security Code" required>
+                        </div>
+            
+                        <div class="form-group">
+                          <input type="text" class="full-width" placeholder="Name on Card" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label><input type="radio" name="billing_address" value="shipping_address"> Use shipping address as billing address</label>
+                      </div>
+                    </div>
+            
+                    <div class="form-section">
+                      <div class="form-group">
+                        <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+                      </div>
+                    </div>
+            
+                    <div class="form-section">
+                      <div class="form-group">
+                        <label><input type="radio" name="payment_method" value="apple_pay"> Apple Pay</label>
+                      </div>
+                    </div>
+                    <a class = "submit-button"><input type="submit" value="Pay Now"></a> 
+                  </div>
+               </form>
+              </div>
 		   	</div><!------macaron page left -->
 
 		   	<div id = "macaron-page-right">
-				<div class = "checkout-cart">
-					<div id = "checkout-decoration">
-						<img src="resources/checkout-decoration.png" alt="decoration">
-					</div>
+				<div class = "checkout-cart" class = "payment-checkout-cart">
+				  <div id = "checkout-decoration">
+					<img src="resources/checkout-decoration.png" alt="decoration">
+			      </div>
 				  <div class = "cart-description">
 			          <h2> YOUR ORDER </h2>
 			          <p>Make a collection of 3, 6, 9, or 12 macarons to be packaged and delivered to your door!!!! </p>
@@ -122,7 +137,7 @@
 			      	</div> <!-- END OF cart-list-total -->
 			      </div> <!-- END OF cart-list -->
 
-			      <a href="payment.html"><input type="submit" value="CHECKOUT"></a>
+			      <input type="submit" value="CHECKOUT">
 		        </div> <!-- END OF checkout-cart -->
 		   	</div><!------macaron page right -->
 
