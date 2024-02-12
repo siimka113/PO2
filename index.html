@@ -14,18 +14,16 @@
 
   <body>
 <!--------------------------HEADER //-------------------------------------------------->
-      <header>
+      <div id = "style-guide-header">
         <h1>Macaron - Style Guide</h1>
         <nav>        
           <a href="#interactive_elements">Interactive Elements</a>
           <a href="#text_elements">Text Elements</a>
           <a href="#combined_elements">Combined Elements</a>
-        </nav>
-        <nav>        
-          <a href="product-listing.html">Product Listing Template</a>
+          <a href="macarons.html">Product Listing Template</a>
           <a href="#citations">Citations</a>
         </nav>
-      </header>
+      </div>
 
 
 <!--------------------------INTERACTIVE ELEMENTS SECTION //---------------------------->
@@ -231,13 +229,10 @@
       <!-- Main Navigation-->
       <section class="element">
         <h3>Main Navigation</h3>
-        <h4>idk how to make the logo shape merge with the nav bar shape so that there is only one drop shadow ;-;</h4>
-
+        
         <nav class="navbar">
           <div class="logo-container">
-            <div class="logo">
-              <img src="resources/yellow_macaron.jpg" alt="Logo">
-            </div>
+            <img src="resources/logo.png" alt="Logo">
           </div>
           <div class="nav-links">
             <a href="#">About</a>
@@ -254,35 +249,38 @@
       <section class="element">
         <h3>Product/Service Listing</h3>
 
-        <div class="container">
-          <div class="left-container">
-            <div class="header">
+        <div class="product-detail-header">
+            <a href="macarons.html">
               <img src="resources/BackArrow.png" alt="Icon">
-              <h1>Product Title</h1>
-            </div>
-            <img src="resources/yellow_macaron.jpg" alt="Product Image">
+            </a>
+            <h1>The anatomy of the Lemon Tree</h1>
           </div>
-          <div class="right-container">
-            <div class="subsection">
-              <h3>Hard Part</h3>
-              <p>Description of hard part. Description of hard part.</p>
+          <div class="container">
+            <div class="left-container">
+              <img src="resources/yellow_macaron.jpg" alt="Product Image">
             </div>
-            <div class="subsection">
-              <h3>Soft Part</h3>
-              <p>Description of soft part.</p>
+            <div class="right-container">
+              <div class="subsection">
+                <h3>Hard Part</h3>
+                <p>Description of hard part. Description of hard part.</p>
+              </div>
+              <div class="subsection">
+                <h3>Soft Part</h3>
+                <p>Description of soft part.</p>
+              </div>
+              <div class="subsection">
+                <h3>Ingredients</h3>
+                <p>List of ingredients.</p>
+              </div>
+              <form class="submit-button">
+                <input type="submit" value="Add to Order">
+              </form>
+              <div class="drawing">
+                <img src="resources/arrows.png" alt="Arrows">
+              </div> 
             </div>
-            <div class="subsection">
-              <h3>Ingredients</h3>
-              <p>List of ingredients.</p>
-            </div>
-            <form class="submit-button">
-              <input type="submit" value="Add to Order">
-            </form>
-            <div class="drawing">
-              <img src="resources/arrows.png" alt="Arrows">
-            </div> 
-          </div>
-        </div>
+          </div><!-- product-detail-header -->
+
 
       </section><!-- element  (product listing) -->
 
@@ -344,6 +342,66 @@
       <!-- Checkout cart -->
       <section class="element">
         <h3>Checkout Cart</h3>
+        <div class = "checkout-cart">
+          <div class = "cart-description">
+                <h2> YOUR ORDER </h2>
+                <p>Make a collection of 3, 6, 9, or 12 macarons to be packaged and delivered to your door!!!! </p>
+            </div><!------cart description -->
+
+            <div class = "cart-list">
+              <div class = "cart-item">
+                  <div class = "cart-item-left">
+                    <img src="resources/yellow_macaron.jpg" alt="Product Image">
+                  </div>
+
+                  <div class = "cart-item-middle">
+                    <p>MATCHA MATCH</p>
+                    <div class = "cart-add-or-subtract">
+                      <input class = "cart-buttons" type="button" value="+">
+                      <input class = "cart-buttons" type="button" value="--">
+                  </div>
+                  </div>
+
+                  <div class = "cart-item-right">
+                    <p>$3.50</p>
+                    <p id = "cart-item-quantity">2</p>
+                  </div>
+              </div><!-- END OF cart-items -->
+
+              <div class = "cart-item">
+                  <div class = "cart-item-left">
+                    <img src="resources/yellow_macaron.jpg" alt="Product Image">
+                  </div>
+
+                  <div class = "cart-item-middle">
+                    <p>MATCHA MATCH</p>
+                    <div class = "cart-add-or-subtract">
+                      <input class = "cart-buttons" type="button" value="+">
+                      <input class = "cart-buttons" type="button" value="--">
+                  </div>
+                  </div>
+
+                  <div class = "cart-item-right">
+                    <p>$3.50</p>
+                    <p class = "cart-item-quantity">2</p>
+                  </div>
+              </div><!-- END OF cart-items -->
+
+
+              <div class = "cart-list-total">
+                <div>
+                  <p>COUNT</p>
+                  <p>TOTAL COST</p>
+                </div>
+                <div class ="cart-list-total-right">
+                  <p>4</p>
+                  <p>$7.00</p>
+                </div>
+              </div> <!-- END OF cart-list-total -->
+            </div> <!-- END OF cart-list -->
+
+            <input type="submit" value="CHECKOUT">
+            </div> <!-- END OF checkout-cart -->
        
     </section> <!-- element(checkout cart) -->
 
