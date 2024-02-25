@@ -744,6 +744,7 @@ input[type="radio"] {
 	padding-bottom: 3rem;
 	display: flex;
 	justify-content: space-between;
+	align-items: center; /* This will center the content vertically */
   }
 
   .home-horizontal-container h1 {
@@ -753,18 +754,36 @@ input[type="radio"] {
 	margin-bottom: 1rem;
 	margin-top:7rem;
   }
+  .intro-right-side img{
+	width: 700px; 
+	padding-left: 5rem;
+  }
   
   .home-horizontal-container p {
 	max-width: 450px;
   }
 
-  @media (max-width: 1200px) {
-	.home-horizontal-container {
-	  flex-direction: column;
-	}
+  @media (max-width: 1300px) {
+
+	.intro-right-side img{
+		width: 125%; 
+		padding-left: 5rem;
+	  }
   }
   
 
+  @media (max-width: 1000px) {
+	.home-horizontal-container {
+	  flex-direction: column;
+	}
+
+	.intro-right-side img{
+		width: 600px; 
+		padding-top:4rem;
+		padding-left: 20%;
+		padding-right:4rem;
+	  }
+  }
   
   footer {
 	display: flex;
