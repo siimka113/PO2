@@ -923,6 +923,19 @@ footer li, footer p{
   	float: right;
   }
 
+  #CTA-macaron-B {
+	width: 200px;
+	margin-top: -10rem;
+	margin-left: 10rem;
+	float: left;
+   }
+	#CTA-macaron-A {
+		width: 200px;
+		margin-top: -15rem;
+		margin-left: -25rem;
+		float: left;
+	}
+
   @media (max-width: 1200px) {
 		#home-intro, #CTA-board-content {
 		  flex-direction: column;
@@ -930,6 +943,16 @@ footer li, footer p{
 
 		.intro-element img {
 			width: 80%;
+		}
+		#CTA-macaron-C{
+			width: 200px;
+		}
+		#CTA-macaron-B{
+			width: 150px;
+		}
+		#CTA-macaron-A{
+			width: 150px;
+			margin-left: 0rem;
 		}
   }
   
