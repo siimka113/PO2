@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>Home || MACARON.</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Single+Day">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:400,600'">
@@ -13,70 +13,124 @@
 <!--------------------------HEADER //-------------------------------------------------->
 
 <header>
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="logo-container">
-        <img src="resources/logo.png" alt="Logo">
+        <a href="home.html"> <img src="resources/logo.png" alt="Logo"></a>
     </div>
     <div class="nav-links">
-        <a href="#">About</a>
-        <a href="macarons.html">Macarons</a>
-        <a href="payment.html">Order Now</a>
+        <a href="home.html">Home</a>
+        <a href="macarons.html">Our Macarons</a>
+        <a href="index.html">Style Guide</a>
     </div>
-    </nav>
+  </nav>
 </header>
 
 
 <!--------------------------Landing SECTION //---------------------------->
 
 
-<div class="home-vertical-section" style="background-color: #ffcccc;">
-  <img src="your-image-source" alt="Image 1" style="width: 100%;">
+<div class="landing">
+  <h1>INSERT IMAGE OR VIDEO HERE</h1>
 </div>
 
 <!--------------------------Intro SECTION //---------------------------->
 <div id = "home-wrapper">
-
-<div class="home-vertical-section" style="background-color: #ccffcc;">
-  <div class="home-horizontal-container">
-    <div>
+  <div id = "home-intro" class="home-horizontal-container">
+    <div class = "intro-element">
+      <img id = "home-about-decor" src="resources/home-about-decor.png" alt="decorations">
       <h1>NOT YOUR TYPICAL MACARONS</h1>
       <p>Macarons, the delicate and delectable French confection, have earned a reputation as the epitome of culinary perfection, captivating taste buds with their ethereal combination of crispy shells and sumptuous fillings. Renowned for their exquisite texture and vibrant array of flavors, macarons stand as a testament to the artistry and precision inherent in the world of pastry. </p>
     </div>
-    <div class ="intro-right-side">
-    <img src="resources/chocolate_macarons.png" alt="chocolate_macarons" style="width: 50%;">
+    <div class ="intro-element">
+      <img src="resources/intro-macarons.jpeg" alt="chocolate_macarons">
     </div>
   </div>
-</div>
+
+<!--------------------------interSECTION //---------------------------->
+  <div id = "home-intersection" class="home-horizontal-container">
+    <img src="resources/intersection-arrow.png" alt="an arrow">
+    <h1>READY TO TRY YOUR NEW FAVORITES?</h1>
+  </div>
+
 
 <!--------------------------CTA SECTION //---------------------------->
+  <div id = "CTA-board" class="home-horizontal-container">
 
+   <div id = "CTA-board-decoration"><img src="resources/board-hanger.png" alt="a pin"></div>
 
-<div class="home-vertical-section" style="background-color: #ccccff;">
-  <div class="home-horizontal-container">
-    <div>
-      <img src="your-image-source" alt="Image 3">
-      <img src="your-image-source" alt="Image 4">
-    </div>
-    <div>
-      <h3>Your Heading</h3>
-      <p>Your Paragraph</p>
-      <h1>Your Title</h1>
-      <input type="button" value="Button">
-    </div>
-  </div>
-</div>
+   <div id = "CTA-board-content">
+     <div id = "CTA-board-left" class = "CTA-board-element">
+        <div id = "CTA-left-decoration"><img src="resources/black-pin.png" alt="a pin"></div>
+        <div id = "CTA-left-content">
+          <img src="resources/logo.png" alt="chocolate_macarons">
+          <h3> Occasions </h3>
+          <p> Macarons, the delicate and delectable French confection, have earned a reputation as the epitome of culinary perfection. </p>
+        </div> <!--CTA-left-content -->
+      </div><!--CTA-left-->
 
-</div>
+      <div id = "CTA-board-middle" class = "CTA-board-element">
+        <div id = "CTA-middle-decoration"><img src="resources/red-pin.png" alt="a pin"></div>
+        <div id = "CTA-middle-content">
+          <img src="resources/logo.png" alt="chocolate_macarons">
+          <h3> Occasions </h3>
+          <p> Macarons, the delicate and delectable French confection, have earned a reputation as the epitome of culinary perfection. </p>
+        </div> <!--CTA-middle-content -->
+      </div><!--CTA-middle-->
+
+      <div id = "CTA-board-right" class = "CTA-board-element">
+        <h2>Meet some of our Signature Selections </h2>
+        <p> Macarons, the delicate and delectable French confection, have earned a reputation as the epitome of culinary perfection. Macarons, the delicate and delectable French confection, have earned a reputation as the epitome of culinary perfection.</p>
+        <input class = "build-your-order-button" type="button" value="BUILD YOUR ORDER">
+      </div>
+
+    </div><!--CTA-board-content-->
+  </div><!--CTA-board-->
+</div><!--wrapper-->
+<img id = "CTA-macaron-C" src="resources/pink-eaten-macaron.jpeg" alt="pink macarons">
 
 <!--------------------------Footer //---------------------------->
 
 <footer>
-  <img src="your-logo-source" alt="Logo">
-  <div>
-    <h3>Header 1</h3>
-    <h3>Header 2</h3>
-    <h3>Header 3</h3>
+  <div id = "footer-upper">
+    <div id = "footer-logo"><h1>MACARON.</h1></div>
+
+    <div id = "footer-selection">
+      <h4>Selection</h4>
+      <ul>
+        <li><a href="#">Classics</a></li>
+        <li><a href="#">Not Classics</a></li>
+        <li><a href="#">Savoury</a></li>
+        <li><a href="#">Alcoholic</a></li>
+      </ul>
+    </div>
+
+    <div id = "footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">Phone</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Contact Form</a></li>
+      </ul>
+    </div>
+
+    <div id = "footer-connect">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Tiktok</a></li>
+      </ul>
+    </div>
   </div>
+
+  <div id = "footer-lower">
+    <div id = "footer-cookies"><a href="#">Cookies</a></div>
+    <div id = "footer-terms"><a href="#">Terms</a></div>
+    <div id = "footer-privacy"><a href="#">Privacy</a></div>
+    <div id = "footer-copyright"><a>Copyright 2024</a></div>
+  </div>
+
 </footer>
 
 
