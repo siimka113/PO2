@@ -71,7 +71,7 @@ nav {
 
   }
   
-  nav a:hover::before {
+  .nav-links a:hover::before {
 	width: 100%; /* Fully draw the underline on hover */
   }
   
@@ -396,6 +396,67 @@ input[type="radio"] {
 
 /* ----------------------- UNIVERSAL sections and elements ---------------------------*/
 
+
+/* --------- LANDING section ------------*/
+.landing {
+	height: 400px;
+	background-color: #EAEAEA;
+}
+
+/* --------- Footer ------------*/
+footer {
+	background-color: #FF5998;
+	padding: 2rem 5rem 4rem;
+	margin-top: 3rem;
+} 
+
+footer h1, footer h4, footer a, footer p {
+	color: white;
+}
+
+footer h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+footer a, footer p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+}
+
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+footer li, footer p{
+	margin-left: 0.5rem;
+	margin-bottom: 0.7rem;
+}
+
+#footer-upper {
+	display: grid;
+	grid-template-columns: 50% 1fr 1fr 1fr;
+	margin-bottom: 5rem;
+}
+
+#footer-lower {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 70%;
+}
+
+#footer-copyright {
+	text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+	#footer-upper, #footer-lower {
+		grid-template-columns: 1fr;
+	}
+}
+
+
 /* --------- Checkout cart ------------*/
 .cart-buttons { /* the + and - button in the checkout cart */
 	font-family: 'Poppins', sans-serif;
@@ -511,7 +572,7 @@ input[type="radio"] {
 }
 
 /* ----------------------- PRODUCT LISTING PAGE Related ---------------------------*/
-#wrapper { /* for everything under the navigation bar */
+#macarons-wrapper { /* for everything under the navigation bar */
 	margin-top: 5rem;
 	margin-bottom: 5rem;
 	margin-left: 12%;
@@ -548,7 +609,7 @@ input[type="radio"] {
 
   .item-section {
   	display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 		row-gap: 2rem;
 		column-gap: 2rem;
@@ -623,12 +684,12 @@ input[type="radio"] {
 
 
 @media screen and (max-width: 800px) {
-	#wrapper {
+	#macarons-wrapper {
 		grid-template-areas: 
 		"a"
 		"b";
 	}
-	#wrapper .checkout-cart {
+	#macarons-wrapper .checkout-cart {
 		margin-left: 0;
 	}
 	#macaron-page-left {
@@ -723,9 +784,31 @@ input[type="radio"] {
 
 /* ----------------------- HOME PAGE Related ---------------------------*/
 
+.build-your-order-button {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: #4F2208;
+	border-radius: 0.3rem;
+	border-style: solid;
+	border-color: #4F2208;
+	color: white;
+	cursor: pointer;
+	width: 100%;
+	padding: 1rem;
+	margin-top: 2rem;
+	transition: color 0.3s ease, border-color 0.3s ease; /* Add transition for color and border-color */
+}
+
+.build-your-order-button:hover{
+	background-color: white;
+	color:#4F2208;
+	border-color: #4F2208;
+}
+
 	#home-wrapper { /* for everything under the navigation bar */
-		margin-left: 15%;
-		margin-right:15%;
+		margin-left: 8%;
+	  margin-right: 8%;
 	}
 
   .home-container {
@@ -733,16 +816,10 @@ input[type="radio"] {
 	justify-content: space-between;
   }
   
-  .home-vertical-section {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-  }
-  
   .home-horizontal-container {
-	padding-top: 5rem;
+  width: 100%;
+	padding-top: 2rem;
 	padding-bottom: 3rem;
-	display: flex;
 	justify-content: space-between;
 	align-items: center; /* This will center the content vertically */
   }
@@ -763,85 +840,128 @@ input[type="radio"] {
 	max-width: 450px;
   }
 
-  @media (max-width: 1300px) {
-
-	.intro-right-side img{
-		width: 125%; 
-		padding-left: 5rem;
-	  }
+  #home-intro {
+  	display: flex;
   }
-  
 
-  @media (max-width: 1000px) {
-	.home-horizontal-container {
-	  flex-direction: column;
+  .intro-element {
+  	padding: 2rem;
+  }
+
+  .intro-element img {
+  	width: 35rem;
+  	margin-top: 2rem;
+  }
+
+  #home-about-decor {
+  	width: 5rem;
+  	margin-bottom: -8.5rem;
+  	margin-left: -3.5rem;
+  }
+
+  #home-intersection {
+  	display: flex;
+  	align-items: flex-start;
+  	margin-top: -10rem;
+  }
+
+  #home-intersection h1 {
+  	font-size: 56px;
+  	margin-top: 10rem;
+  	margin-left: auto;
+  	text-align: right;
+  }
+  #home-intersection img {
+  	width: 350px;
+  	display: block;
+		margin-left: auto;
+  }
+
+	#CTA-board img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.intro-right-side img{
-		width: 600px; 
-		padding-top:4rem;
-		padding-left: 20%;
-		padding-right:4rem;
-	  }
+	#CTA-board-decoration img{
+  	width: 80px;
   }
-  
-  footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 130px;
-	background-color: #f0f0f0;
-  } 
 
-/* ----------------------- CONFIRMATION PAGE Related ---------------------------*/
-
-#confirm-wrapper { /* for everything under the navigation bar */
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	margin-left: 12%;
-	margin-right: 8%;
-	display: grid;
-	grid-template-areas: 
-		"a a b";
-}
-
-#confirm-page-left{ 
-	grid-area: a;
-	width: 25rem;
-}
-
-#confirm-page-right{ 
-	grid-area: b;
-	padding-top:4rem;
-	
-}
-.review {
-	display: flex;
-	align-items: center; /* Aligns items horizontally by their center line */
-	justify-content: space-between;
-  }
-  
-  .review input[type="text"] {
-	margin-right: 10px; /* Adjust as needed */
-	flex-grow: 1; /* Takes up available width */
-  }
-  
-  .submit-button {
-	margin-top:1rem;
-	flex-grow: 1; /* Takes up available width */
-  }
-  @media (max-width: 800px) {
-	#confirm-wrapper {
-	  grid-template-areas:
-		"a"
-		"b";
+	#CTA-board-content {
+		display: flex;
+		align-items: flex-start;
+		background-color: #FFE3EE;
+		padding: 3rem 2rem 4rem;
+		margin-top: -0.5rem;
+		border-radius: 1rem;
 	}
-  
 
+	.CTA-board-element { /* Class for all elements within the board, 3 in total (left, midle, right) */
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	 #CTA-board-middle { /* ID for the middle section on the board */
+  	margin-top: 6rem;
+  }
+
+  #CTA-left-content, #CTA-middle-content { /* White area within the sections */
+  	background-color: white;
+  	padding: 2rem;
+		padding-bottom: 4rem;
+		margin-top: -1rem;
+  	border-radius: 1rem;
+  }
+
+  #CTA-left-decoration img, #CTA-middle-decoration img {
+  	width: 45px;
+  }
+
+  #CTA-macaron-C {
+  	width: 355px;
+  	margin-top: -15rem;
+  	float: right;
+  }
+
+  @media (max-width: 1200px) {
+		#home-intro, #CTA-board-content {
+		  flex-direction: column;
+		}
+
+		.intro-element img {
+			width: 80%;
+		}
   }
   
-  
+/* ----------------------- CONTACT PAGE Related ---------------------------*/
+	#contact-wrapper {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		margin-left: 12%;
+		margin-right: 8%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 
+	#contact-wrapper div {
+		padding: 1rem;
+	}
+
+	#contact-wrapper p {
+		max-width: 80%;
+	}
+
+	#contact-email-message textarea{
+		background-color: #EDEDED;
+		font-family: 'poppins', sans-serif;
+		width: 100%;
+	  height: 150px;
+	  padding: 12px 20px;
+	  box-sizing: border-box;
+	  border-style: none;
+	  border-radius: 1rem;
+	  resize: none;
+	}
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
 
 /* sections (interactive, text, combined) in the style guide */
