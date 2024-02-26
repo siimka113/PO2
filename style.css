@@ -175,7 +175,7 @@ input[type=submit]:hover {
   width: 100%;
   padding: 15px;
   padding-left: 30px;
-  background-color: #F9F9F9;
+  background-color: #EDEDED;
   border: none;
   border-radius: 1.3rem;
   outline: none; 
@@ -837,9 +837,7 @@ input[type="radio"] {
 		"b";
 	}
   
-	#confirm-page-right {
-	  padding-left:8rem;
-	}
+
   }
   
   
