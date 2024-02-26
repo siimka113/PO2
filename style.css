@@ -684,12 +684,12 @@ footer li, footer p{
 
 
 @media screen and (max-width: 800px) {
-	#wrapper {
+	#macarons-wrapper {
 		grid-template-areas: 
 		"a"
 		"b";
 	}
-	#wrapper .checkout-cart {
+	#macarons-wrapper .checkout-cart {
 		margin-left: 0;
 	}
 	#macaron-page-left {
@@ -929,7 +929,35 @@ footer li, footer p{
 		}
   }
   
+/* ----------------------- CONTACT PAGE Related ---------------------------*/
+	#contact-wrapper {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		margin-left: 12%;
+		margin-right: 8%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 
+	#contact-wrapper div {
+		padding: 1rem;
+	}
+
+	#contact-wrapper p {
+		max-width: 80%;
+	}
+
+	#contact-email-message textarea{
+		background-color: #EDEDED;
+		font-family: 'poppins', sans-serif;
+		width: 100%;
+	  height: 150px;
+	  padding: 12px 20px;
+	  box-sizing: border-box;
+	  border-style: none;
+	  border-radius: 1rem;
+	  resize: none;
+	}
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
 
 /* sections (interactive, text, combined) in the style guide */
