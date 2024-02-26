@@ -609,7 +609,7 @@ footer li, footer p{
 
   .item-section {
   	display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 		row-gap: 2rem;
 		column-gap: 2rem;
@@ -837,7 +837,6 @@ footer li, footer p{
 
   #home-intro {
   	display: flex;
-  	justify-content: flex-end;
   }
 
   .intro-element {
