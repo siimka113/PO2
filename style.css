@@ -398,9 +398,23 @@ input[type="radio"] {
 
 
 /* --------- LANDING section ------------*/
-.landing {
-	height: 400px;
-	background-color: #EAEAEA;
+#landing {
+	position: relative;
+	z-index: -1;
+}
+
+.video-wrap video{
+	width: 100%;
+}
+
+.landing-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.landing-text h1{
+	color: white;
 }
 
 /* --------- Footer ------------*/
@@ -861,20 +875,21 @@ footer li, footer p{
 
   #home-intersection {
   	display: flex;
-  	align-items: flex-start;
   	margin-top: -10rem;
+  	margin-left: 10%;
   }
 
   #home-intersection h1 {
   	font-size: 56px;
   	margin-top: 10rem;
-  	margin-left: auto;
-  	text-align: right;
+  	margin-right: auto;
+
   }
   #home-intersection img {
   	width: 350px;
   	display: block;
-		margin-left: auto;
+  	margin-left: auto;
+  	padding-right: 2rem;
   }
 
 	#CTA-board img {
