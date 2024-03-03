@@ -5,7 +5,7 @@
 /* ----------------------- TEXT and HEADINGS Related ---------------------------*/
 body{
 	margin: 0;
-	background-color: #FCFCFC; /* background color according to figma, can change */
+	background-color: #F9F9F9;
 }
 
 h1 {
@@ -109,7 +109,6 @@ nav {
   img {
 	width: 10rem; /* Set the desired width */
 	height: auto; /* Maintain aspect ratio */
-	mix-blend-mode: multiply;
 
 }
 
@@ -933,23 +932,20 @@ footer li, footer p{
   }
 
   #CTA-macaron-C {
-  	width: 355px;
+  	width: 450px;
   	margin-top: -15rem;
   	float: right;
+	z-index: 2;
   }
 
   #CTA-macaron-B {
-	width: 200px;
-	margin-top: -10rem;
-	margin-left: 10rem;
+	width: 450px;
+	margin-top: -15rem;
+	margin-left: 5rem;
+	rotate: 120deg;
 	float: left;
    }
-	#CTA-macaron-A {
-		width: 200px;
-		margin-top: -15rem;
-		margin-left: -25rem;
-		float: left;
-	}
+
 
   @media (max-width: 1200px) {
 		#home-intro, #CTA-board-content {
@@ -960,15 +956,17 @@ footer li, footer p{
 			width: 80%;
 		}
 		#CTA-macaron-C{
-			width: 200px;
+			width: 350px;
+			z-index: 2;
+			margin-top: -7rem;
+
 		}
 		#CTA-macaron-B{
-			width: 150px;
+			width: 350px;
+			margin-top: -9rem;
+
 		}
-		#CTA-macaron-A{
-			width: 150px;
-			margin-left: 0rem;
-		}
+
   }
   
 /* ----------------------- CONTACT PAGE Related ---------------------------*/
@@ -1000,6 +998,23 @@ footer li, footer p{
 	  border-radius: 1rem;
 	  resize: none;
 	}
+/* ----------------------- HOME NEWS Related ---------------------------*/
+
+	.news {
+		width: 100%;
+	  }
+	  
+	  
+	  .news-image-container {
+		display: flex;
+		justify-content: space-between;
+	  }
+	  
+	  .image-container img {
+		width: calc((100% - 2 * 10px) / 3); /* Adjust the '10px' to change the margin */
+		height: auto;
+	  }
+	  
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
 
 /* sections (interactive, text, combined) in the style guide */
