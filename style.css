@@ -56,14 +56,14 @@ nav {
 	font-weight: 700;
   }
   
-  nav a {
+   a {
 	color: #818181;
 	position: relative; /* Required for pseudo-element positioning */
 	transition: color 0.2s ease; /* Ease transition for the color change */
 
   }
   
-  nav a::before {
+   a::before {
 	content: '';
 	position: absolute;
 	width: 0%;
