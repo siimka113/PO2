@@ -866,7 +866,8 @@ footer li, footer p{
   }
 
   .intro-element {
-  	padding: 2rem;
+  	margin-left: 7%; /* Move the NOT YOUR TYPICAL MACARONS section a bit to the right, looks better */
+  	float: right;
   }
 
   .intro-element img {
@@ -942,7 +943,7 @@ footer li, footer p{
 
   #CTA-macaron-C {
   	width: 450px;
-  	margin-top: -15rem;
+  	margin-top: -10rem;
   	margin-right: -8%;
   	float: right;
 		z-index: 2;
@@ -950,7 +951,7 @@ footer li, footer p{
 
 	  #CTA-macaron-B {
 		width: 450px;
-		margin-top: -20rem;
+		margin-top: -15rem;
 		margin-left: -8%;
 		rotate: 160deg;
 		float: left;
