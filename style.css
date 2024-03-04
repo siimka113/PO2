@@ -417,6 +417,7 @@ input[type="radio"] {
 .landing-text h1{
 	font-size: 8vw;
 	color: #FCFCFC;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* --------- Footer ------------*/
