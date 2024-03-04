@@ -42,6 +42,10 @@ p, label, li{
 	letter-spacing: 1px;
 }
 
+section {
+	margin-bottom: 3rem;
+}
+
 a {
 	text-decoration: none;
 }
@@ -820,7 +824,7 @@ footer li, footer p{
 	border-color: #4F2208;
 }
 
-	#home-wrapper { /* for everything under the navigation bar */
+	.home-wrapper { /* for everything under the navigation bar */
 		margin-left: 8%;
 	  margin-right: 8%;
 	}
@@ -936,18 +940,23 @@ footer li, footer p{
   #CTA-macaron-C {
   	width: 450px;
   	margin-top: -15rem;
+  	margin-right: -8%;
   	float: right;
-	z-index: 2;
+		z-index: 2;
   }
 
-  #CTA-macaron-B {
-	width: 450px;
-	margin-top: -15rem;
-	margin-left: 5rem;
-	rotate: 120deg;
-	float: left;
-   }
+	  #CTA-macaron-B {
+		width: 450px;
+		margin-top: -20rem;
+		margin-left: -8%;
+		rotate: 160deg;
+		float: left;
+	   }
 
+	.news{ /* Makes the news section NOT wrapped around the macaron images, likely not the best fix
+	          , should consider going back to this) */
+  		margin-top: 10rem;
+  }
 
   @media (max-width: 1200px) {
 		#home-intro, #CTA-board-content {
@@ -1000,6 +1009,13 @@ footer li, footer p{
 	  border-radius: 1rem;
 	  resize: none;
 	}
+
+/* ----------------------- CONFIRMATION PAGE Related ---------------------------*/
+#confirm-right img{
+	margin-left: 20%;
+	margin-top: -5%;
+}
+
 /* ----------------------- HOME NEWS Related ---------------------------*/
 
 	.news {
