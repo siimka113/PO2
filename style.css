@@ -226,14 +226,15 @@ input[type="radio"] {
  	margin-bottom: -2rem;
  	padding: 1rem;
  	background-color: white;
- 	border-radius: 4rem;
+ 	border-radius: 12rem;
  	border: 1px solid transparent; 
-  box-shadow: 0 4px 0.5px -2px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 0.5px -2px rgba(0, 0, 0, 0.2); 
  }
 
  .logo-container img {
  	width: 100px;
- 	height: 100px;
+ 	height: 110px;
+	margin-left: 0.5rem;
  }
 
  .nav-links{
@@ -893,6 +894,7 @@ footer li, footer p{
 
 	#CTA-board img {
 		display: block;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -922,8 +924,8 @@ footer li, footer p{
   #CTA-left-content, #CTA-middle-content { /* White area within the sections */
   	background-color: white;
   	padding: 2rem;
-		padding-bottom: 4rem;
-		margin-top: -1rem;
+	padding-bottom: 4rem;
+	margin-top: -1rem;
   	border-radius: 1rem;
   }
 
