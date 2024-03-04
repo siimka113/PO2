@@ -2,7 +2,7 @@
 <html lang = "en">
 	<head>
 	    <meta charset="utf-8">
-	    <title>Confirmation</title>
+	    <title>Merci! || MACARON.</title>
 	    <link href="style.css" rel="stylesheet">
 	    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Single+Day">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:400,600'">
@@ -25,25 +25,49 @@
 	</header>
 
 
-      <div id = "contact-wrapper">
+      <div id = "confirm-wrapper">
 	      <!--------------------------Confirmation SECTION //---------------------------->
 	    <div id = "confirm-left">
-	  
-	        <h1>Thank you! Your order has been received.</h1>
-	    
+          <div id = "confirm-receipt">
+  	        <h1>Thank you! Your order has been received.</h1>
             <p> A receipt has been sent to your email.</p>
+            <div id = "confirm-receipt-order-list">
+              <div id = "confirm-receipt-order-list-left">
+                <div class = "confirm-receipt-headings"><p>Order: </p></div>
+                <div class = "confirm-receipt-order-list-left-item">
+                  <img src="resources/yellow_macaron.jpg" alt="Product Image">
+                  <p> MATCHA MATCH . X2</p>
+                </div>
+                <div class = "confirm-receipt-order-list-left-item">
+                  <img src="resources/pink_macaron.jpg" alt="Product Image">
+                  <p> BERRY BLUSH . X6</p>
+                </div>
+              </div>
+              <div id = "confirm-receipt-order-list-right">
+                <div class = "confirm-receipt-headings"><p>Deliver to: </p></div>
+                <div id = "confirm-user-information">
+                  <p>Ratnald McRat </p>
+                  <p>1234 SFU UBC Road </p>
+                  <p> Russell Street </p>
+                  <p>IAT 339 </p>
+                </div>
+              </div>
 
+            </div>
+          </div>
+
+          <div id = "confirm-review">
             <h1>Leave a Review</h1>
             <p> Have you had a taste already? Tell us what you think! Your (anonymous) feedback will be greatly appreciated^^</p>
-            <form class="review">
-                <input type="text" name="review" value="Your opinion">
+            <form class="confirm-review-form">
+                <textarea id="review-form-textfield" name="review" rows="4" cols="50" placeholder = "You opinion here!"></textarea>
                 <input type="submit" value="Send">
             </form>
-
+          </div>
 		</div><!------confirm page left -->
 
 		   	<div id = "confirm-right">
-                <img src="resources/confirm_mouse.png" alt="confirm_mouse" style="width:70%;">
+                <img src="resources/confirm_mouse.png" alt="confirm_mouse" style="width:80%;">
 				
 		   	</div><!------confirm page right -->
 

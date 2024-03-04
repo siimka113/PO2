@@ -397,28 +397,6 @@ input[type="radio"] {
 /* ----------------------- UNIVERSAL sections and elements ---------------------------*/
 
 
-/* --------- LANDING section ------------*/
-#landing {
-	position: relative;
-	z-index: -1;
-}
-
-.video-wrap video{
-	width: 100%;
-}
-
-.landing-text {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin-right: 3rem;
-}
-
-.landing-text h1{
-	font-size: 8vw;
-	color: #FCFCFC;
-}
-
 /* --------- Footer ------------*/
 footer {
 	background-color: #FF5998;
@@ -807,6 +785,30 @@ footer li, footer p{
 
 /* ----------------------- HOME PAGE Related ---------------------------*/
 
+/* --------- LANDING section ------------*/
+#landing {
+	position: relative;
+	z-index: -1;
+}
+
+.video-wrap video{
+	width: 100%;
+}
+
+.landing-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 3rem;
+}
+
+.landing-text h1{
+	font-size: 8vw;
+	color: #FCFCFC;
+}
+
+/* --------- ABOUT section ------------*/
+
 .build-your-order-button {
 	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
@@ -900,6 +902,8 @@ footer li, footer p{
   	padding-right: 2rem;
   }
 
+  /* --------- CTA BOARD section ------------*/
+
 	#CTA-board img {
 		display: block;
 		width: 100%;
@@ -957,11 +961,13 @@ footer li, footer p{
 		float: left;
 	   }
 
+	/* --------- NEWS  section ------------*/
 	.news{ /* Makes the news section NOT wrapped around the macaron images, likely not the best fix
 	          , should consider going back to this) */
   		margin-top: 10rem;
   }
 
+  /* --------- mobile version ------------*/
   @media (max-width: 1200px) {
 		#home-intro, #CTA-board-content {
 		  flex-direction: column;
@@ -1015,9 +1021,94 @@ footer li, footer p{
 	}
 
 /* ----------------------- CONFIRMATION PAGE Related ---------------------------*/
+#confirm-wrapper {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		margin-left: 12%;
+		margin-right: 8%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+}
+
+#confirm-wrapper h1{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
 #confirm-right img{
 	margin-left: 20%;
 	margin-top: -5%;
+}
+
+#confirm-receipt {
+	margin-bottom: 4rem;
+}
+
+.confirm-receipt-headings p{
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+#confirm-receipt-order-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 1rem 2rem;
+	background-color: white;
+	border-radius: 2rem;
+	column-gap: 2rem;
+}
+
+.confirm-receipt-order-list-left-item {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	column-gap: 0.3rem;
+	margin-top: 0.7rem;
+}
+
+.confirm-receipt-order-list-left-item img{
+	width: 60px;
+}
+
+#confirm-user-information p{
+	margin-top: 0;
+	margin-bottom: 0.2rem;
+}
+
+.confirm-review-form textarea{
+	 background-color: white;
+	 padding: 1rem;
+	 margin-top: 1rem;
+	 margin-bottom: 2rem;
+	 border-radius: 1rem;
+	 border: none;
+   outline: none;
+}
+
+#review-form-textfield { /* Makes the textarea a bit bigger */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+	#confirm-wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	#confirm-right img{
+		margin-top: 3rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#confirm-receipt-order-list {
+		grid-template-columns: 1fr;
+	}
+
+	#confirm-receipt-order-list div{
+		margin-bottom: 1rem;
+	}
+
 }
 
 /* ----------------------- HOME NEWS Related ---------------------------*/
