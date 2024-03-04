@@ -42,10 +42,6 @@ p, label, li{
 	letter-spacing: 1px;
 }
 
-section {
-	margin-bottom: 3rem;
-}
-
 a {
 	text-decoration: none;
 }
@@ -415,10 +411,12 @@ input[type="radio"] {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	margin-right: 3rem;
 }
 
 .landing-text h1{
-	color: white;
+	font-size: 8vw;
+	color: #FCFCFC;
 }
 
 /* --------- Footer ------------*/
@@ -658,15 +656,16 @@ footer li, footer p{
   	max-width: 200px;
   }
 
-#lemon-tree-link{ /* hides the 'LOOK INSIDE' text */
-  display: none;
+.lemon-tree-link{ /* hides the 'LOOK INSIDE' text */
+  display: none; 
   position: absolute;
-  bottom: 0;
+  top: 120%;
   left:20%;
+
   transition: width 0.2s ease; /* Ease transition for the underline */
 }
 
-#lemon-tree-link p:hover {
+.lemon-tree-link p:hover {
 	color: #FF5998;
 
 }
@@ -680,7 +679,7 @@ footer li, footer p{
 	z-index: 2;
 }
 
-.item-listing:hover #lemon-tree-link { /* unhides the 'LOOK INSIDE' text */
+.item-listing:hover .lemon-tree-link { /* unhides the 'LOOK INSIDE' text */
   display: block;
   color: #FF5998;
   margin-top: 0.5rem;
@@ -842,7 +841,6 @@ footer li, footer p{
   
   .home-horizontal-container {
   width: 100%;
-	padding-top: 2rem;
 	padding-bottom: 3rem;
 	justify-content: space-between;
 	align-items: center; /* This will center the content vertically */
@@ -853,7 +851,6 @@ footer li, footer p{
 	line-height: 90%;
 	max-width: 450px;
 	margin-bottom: 1rem;
-	margin-top:7rem;
   }
   .intro-right-side img{
 	width: 700px; 
@@ -879,7 +876,7 @@ footer li, footer p{
 
   #home-about-decor {
   	width: 5rem;
-  	margin-bottom: -8.5rem;
+  	margin-bottom: -6rem;
   	margin-left: -3.5rem;
   }
 
