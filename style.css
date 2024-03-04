@@ -637,9 +637,6 @@ footer li, footer p{
 .lemon-tree-link{ /* hides the 'LOOK INSIDE' text */
   display: none; 
   position: absolute;
-  top: 120%;
-  left:20%;
-
   transition: width 0.2s ease; /* Ease transition for the underline */
 }
 
