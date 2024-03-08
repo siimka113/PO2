@@ -6,6 +6,8 @@
 body{
 	margin: 0;
 	background-color: #F9F9F9;
+	position:relative;
+	margin-top: 5rem;
 }
 
 h1 {
@@ -216,9 +218,12 @@ input[type="radio"] {
  .navbar {
  	display: flex;
  	align-items: flex-end;
+ 	position: fixed;
+ 	width: 100%;
  	background-color: white;
  	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add drop shadow */
-	z-index: 1; /* Ensure navbar stays on top of other elements */
+	z-index: 3; /* Ensure navbar stays on top of other elements */
+	top: 0;
  }
 
  .logo-container {
@@ -567,8 +572,7 @@ footer li, footer p{
 
 /* ----------------------- PRODUCT LISTING PAGE Related ---------------------------*/
 #macarons-wrapper { /* for everything under the navigation bar */
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-top: 10rem;
 	margin-left: 12%;
 	margin-right: 8%;
 	display: grid;
@@ -660,8 +664,9 @@ footer li, footer p{
   margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1200px) {
-	#wrapper {
+@media screen and (max-width: 768px) {
+	#macarons-wrapper {
+		margin-top: 15rem;
 	  grid-template-areas: 
 	  "a"
 	  "b";
@@ -786,6 +791,12 @@ footer li, footer p{
 #landing {
 	position: relative;
 	z-index: -1;
+}
+
+@media (max-width: 1200px) {
+	#landing {
+		margin-top: 12.6rem;
+	}
 }
 
 .video-wrap video{
@@ -986,16 +997,23 @@ footer li, footer p{
 		}
 
   }
+
+/* ----------------------- PAYMENT PAGE Related ---------------------------*/
+#payment-form {
+	margin-bottom: 5rem;
+}
   
 /* ----------------------- CONTACT PAGE Related ---------------------------*/
 	#contact-wrapper {
-		margin-top: 5rem;
+		margin-top: 10rem;
 		margin-bottom: 5rem;
 		margin-left: 12%;
 		margin-right: 8%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+
+
 
 	#contact-wrapper div {
 		padding: 1rem;
@@ -1017,9 +1035,16 @@ footer li, footer p{
 	  resize: none;
 	}
 
+	@media (max-width: 768px) {
+		#contact-wrapper {
+			margin-top: 15rem;
+			grid-template-columns: 1fr;
+		}
+	}
+
 /* ----------------------- CONFIRMATION PAGE Related ---------------------------*/
 #confirm-wrapper {
-		margin-top: 5rem;
+		margin-top: 15rem;
 		margin-bottom: 5rem;
 		margin-left: 12%;
 		margin-right: 8%;
@@ -1087,8 +1112,9 @@ footer li, footer p{
             box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
 	#confirm-wrapper {
+		margin-top: 15rem;
 		grid-template-columns: 1fr;
 	}
 
