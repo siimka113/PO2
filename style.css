@@ -140,17 +140,147 @@ input[type=submit] {
 	border-style: solid;
 	color: #818181;
 	font-size: 16px;
+	margin-top: 1rem;
 	padding: 0.8rem 2rem;
 	cursor: pointer;
 	width: 100%;
 	transition: color 0.3s ease, border-color 0.3s ease; /* Add transition for color and border-color */
-
 }
 
 input[type=submit]:hover {
 	color:#FF5998;
 	border-color: #FF5998;
+}
+
+input[type="text"]{
+    height: 2.6875rem;
+    width: 100%;
+    border: 2px solid ;
+    border-color:#818181;
+    flex-shrink: 0;
+	  border-radius: 1.3rem;
+	  background-color: #EDEDED;
+	  margin-top: 0.5rem;
+	  margin-bottom: 0.5rem;
+	  margin-right: 0.5rem;
+    padding: 1.5rem ; 
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover{
+	background-color: #F9F9F9; 
+	border-color: #FF5998;
+}
+
+input[type="radio"] {
+	  margin: 1rem 1rem 1.2rem;
+    display: inline-block; 
+    vertical-align: middle;
+    appearance: none;
+	  margin-right: 0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #D9D9D9;
+    border-radius: 50%;	
+    outline: none;
+    cursor: pointer;
+}
+
+  input[type="radio"]:checked {
+    background-color: #FF5998;
+}
+
+  textarea{
+		background-color: #EDEDED;
+		font-family: 'poppins', sans-serif;
+		width: 100%;
+	  height: 150px;
+	  margin-top: 0.5rem;
+	  margin-bottom: 0.5rem;
+	  padding: 1.0rem 1.2rem;
+	  box-sizing: border-box;
+	  border: 2px solid ;
+    border-color:#818181;
+	  border-radius: 1.3rem;
+	  resize: none;
+	  transition: background-color 0.3s ease;
+	}
+
+	textarea:hover {
+		background-color: #F9F9F9;
+		border-color: #FF5998;
+	}
+
+  .form-container {
+    background-color: #fff;
+
   }
+  .form{
+    margin-bottom:1.5rem;
+    border-radius: 5px;
+    max-width: 600px;
+  }
+
+  .form-group {
+    display: flex;
+  }
+
+  .half-width {
+    width: calc(50% - 5px);
+  }
+  
+  .form-section {
+    border-top: 1px solid #ccc;
+    max-width:800px;
+  }
+
+  .input-fields {
+    margin-right:1rem;
+    margin-left:1rem;
+  }
+  
+  .form-section:last-child {
+    margin-bottom: 0; 
+    border-bottom: 0px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  }
+
+  form label {
+    display: inline;
+    text-align: left;
+  }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.row form {
+  display: flex;
+  width: 100%;
+  align-items: center; 
+}
+
+.row form input[type="text"],
+.row form button {
+  flex: 2;
+}
+
+.row form button {
+  flex: 1;
+  margin-top: 3rem; 
+  margin-left: 1rem;
+}
 
 
 .text-input {
@@ -194,25 +324,6 @@ input[type=submit]:hover {
   font-size: 12px; /* Adjust as needed */
   color: #4A1C00; /* Adjust as needed */
 }
-
-input[type="radio"] {
-    display: inline-block; 
-    vertical-align: middle;
-    appearance: none;
-	margin-right: 0.8rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 18px;
-    height: 18px;
-    background-color: #D9D9D9;;
-    border-radius: 50%;	
-    outline: none;
-    cursor: pointer;
-  }
-
-  input[type="radio"]:checked {
-    background-color: #FF5998;
-  }
 
 
 /* ----------------------- NAV BAR Related ---------------------------*/
@@ -280,125 +391,6 @@ input[type="radio"] {
 		  box-shadow: none;
 	  }
   }
-
-/* ----------------------- FORM Related ---------------------------*/
-
-  .form-container {
-    background-color: #fff;
-
-  }
-  .form{
-    margin-bottom:1.5rem;
-    border-radius: 5px;
-    max-width: 600px;
-  }
-
-  .form-group {
-    display: flex;
-  }
-
-  .half-width {
-    width: calc(50% - 5px);
-  }
-  input.full-width {
-    width: 100%;
-  }
-
-  .form-section {
-    border-top: 1px solid #ccc;
-    max-width:800px;
-  }
-
-  .input-fields {
-    margin-right:1rem;
-    margin-left:1rem;
-  }
-  
-  .form-section:last-child {
-    margin-bottom: 0; 
-    border-bottom: 0px;
-  }
-
-
-  input[type="radio"] {
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
-    
-  }
-
-  @media screen and (max-width: 480px) {
-    .container {
-      padding: 10px;
-    }
-  }
-
-  form label {
-    display: inline;
-    text-align: left;
-  }
-
-
-  form input[type="text"]{
-    width: 29.5625rem;
-    height: 2.6875rem;
-    flex-shrink: 0;
-	border-radius: 1.3rem;
-	background-color: #F9F9F9;
-    margin-top: 0.75rem;
-    padding: 1.5rem ; 
-    width: 60%; 
-    transition: background-color 0.3s ease; 
-	border-color:#818181;
-  }
-
-
-  form input[type="text"]:focus,
-  form input[type="text"]:hover{
-	background-color: #EBEBEB; 
-  }
-
- 
-
-  .form-group input[type="text"] {
-    width: 100%; 
-    margin-right: 10px; 
-  }
-
-  
-  .checkout-cart {
-    max-width: 800px;
-    padding: 2rem;
-	position: sticky;
-	top:10rem;
-
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.row form {
-  display: flex;
-  width: 100%;
-  align-items: center; 
-}
-
-.row form input[type="text"],
-.row form button {
-  flex: 2;
-}
-
-.row form button {
-  flex: 1;
-  margin-top: 3rem; 
-  margin-left: 1rem;
-}
-
 
 /* ----------------------- UNIVERSAL sections and elements ---------------------------*/
 
@@ -514,7 +506,14 @@ footer li, footer p{
   min-width: 300px;
   max-width: 1200px;
   padding: 0rem 1rem 2rem;
+  position: sticky;
+	top:10rem;
 }
+
+.checkout-cart input[type=submit] {
+		margin-top: 0;
+}
+
 
 #wrapper .checkout-cart {
 	margin-left: auto; /* move the shopping cart to the right, 
@@ -1022,11 +1021,17 @@ footer li, footer p{
 	.news{ /* Makes the news section NOT wrapped around the macaron images, likely not the best fix
 	          , should consider going back to this) */
   		margin-top: 10rem;
+  		width: 100%;
   }
 
   .news-image-container {
-	display: flex;
-	justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+  }
+
+  .image-container img {
+		width: calc((100% - 2 * 10px) / 3); /* Adjust the '10px' to change the margin */
+		height: auto;
   }
   
   .news-item {
@@ -1079,24 +1084,16 @@ footer li, footer p{
 
 
 
-	#contact-wrapper div {
+	#contact-left, #contact-right {
 		padding: 1rem;
+	}
+
+	#contact-right form{
+		padding-top: 1.6rem;
 	}
 
 	#contact-wrapper p {
 		max-width: 80%;
-	}
-
-	#contact-email-message textarea{
-		background-color: #EDEDED;
-		font-family: 'poppins', sans-serif;
-		width: 100%;
-	  height: 150px;
-	  padding: 12px 20px;
-	  box-sizing: border-box;
-	  border-style: none;
-	  border-radius: 1rem;
-	  resize: none;
 	}
 
 	@media (max-width: 768px) {
@@ -1197,23 +1194,6 @@ footer li, footer p{
 	}
 
 }
-
-/* ----------------------- HOME NEWS Related ---------------------------*/
-
-	.news {
-		width: 100%;
-	  }
-	  
-	  
-	  .news-image-container {
-		display: flex;
-		justify-content: space-between;
-	  }
-	  
-	  .image-container img {
-		width: calc((100% - 2 * 10px) / 3); /* Adjust the '10px' to change the margin */
-		height: auto;
-	  }
 	  
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
 
