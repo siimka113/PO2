@@ -476,6 +476,9 @@ footer li, footer p{
 	#footer-upper, #footer-lower {
 		grid-template-columns: 1fr;
 	}
+	#footer-lower div {
+		margin-bottom: 1rem; 
+	}
 }
 
 
