@@ -829,30 +829,20 @@ footer li, footer p{
 
 /* --------- LANDING section ------------*/
 #landing {
+	padding-top: 2rem;
 	position: relative;
 	z-index: -1;
 }
 
 @media (max-width: 1200px) {
 	#landing {
-		margin-top: 12.6rem;
+		padding-top: 0;
+		margin-top: 11.4rem;
 	}
 }
 
 .video-wrap video{
 	width: 100%;
-}
-
-.landing-text {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin-right: 3rem;
-}
-
-.landing-text h1{
-	font-size: 8vw;
-	color: #FCFCFC;
 }
 
 /* --------- ABOUT section ------------*/
