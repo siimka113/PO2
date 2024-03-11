@@ -657,9 +657,21 @@ footer li, footer p{
   }
 
   .item-listing {
-	position: relative;	
-	padding-bottom: 30px; /* Adjust based on the size of your link */
-  }
+	position: relative;
+	padding-bottom: 30px;
+	padding-left: 1.5rem;
+    border: transparent;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.item-listing:hover {
+	border: 2px solid #FF5998;
+	border-radius: 2rem;
+
+}
+
+
 
   .item-listing img{
   	width: 200px;
