@@ -622,6 +622,11 @@ footer li, footer p{
 	grid-area: b;
 	padding-top:6rem;
 }
+
+.macaron-listing-section{ /* Each individual category (ex. classic) in the macarons listing page */
+	margin-top: 2rem;
+
+}
 	.price {
 		margin-top: 0.5rem;
 		margin-left: 3rem;
@@ -821,6 +826,10 @@ footer li, footer p{
 		
 		width: 200px;
 		height: auto;
+	}
+
+	.right-container {
+		margin-left: 10%;
 	}
 	
 	.drawing {
