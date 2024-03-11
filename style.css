@@ -447,6 +447,7 @@ footer ul {
 footer li, footer p{
 	margin-left: 0.5rem;
 	margin-bottom: 0.7rem;
+	color: white;
 }
 
 #footer-upper {
