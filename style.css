@@ -731,6 +731,10 @@ footer li, footer p{
 	  "a"
 	  "b";
 	}
+
+	.item-listing {
+		padding-bottom: 0;
+	}
 	.item-listing img {
 	  width: 180px;
 	  margin-left: auto;
